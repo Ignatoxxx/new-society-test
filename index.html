@@ -1,24 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
-    <title>New Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mano Puslapis</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
         }
-        h1 {
-            color: #333;
-            text-align: center;
+        nav {
+            background-color: #1a73e8;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #1a73e8;
+        }
+        .contact-form {
+            display: grid;
+            gap: 10px;
+            max-width: 400px;
+        }
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to New Society</h1>
-    <p>This is our initial webpage with some basic styling.</p>
+    <nav>
+        <a href="#pagrindinis">Pagrindinis</a>
+        <a href="#apie">Apie mus</a>
+        <a href="#kontaktai">Kontaktai</a>
+    </nav>
+    
+    <div class="container" id="pagrindinis">
+        <h1>Sveiki atvykę į mano pirmąjį puslapį</h1>
+        <p>Čia bus informacija apie mano projektą.</p>
+    </div>
+
+    <div class="container" id="apie">
+        <h2>Apie mus</h2>
+        <p>Mes esame komanda, kurianti įdomius ir naudingus projektus.</p>
+    </div>
+
+    <div class="container" id="kontaktai">
+        <h2>Kontaktai</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Vardas">
+            <input type="email" placeholder="El. paštas">
+            <textarea placeholder="Jūsų žinutė"></textarea>
+            <button type="submit">Siųsti</button>
+        </form>
+    </div>
 </body>
 </html>
